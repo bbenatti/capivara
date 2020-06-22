@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Chess from 'chess.js'
 import ChessBoard from 'chessboardjsx'
-
 const chess = new Chess()
 const props = { 
 	position: 'start',
@@ -18,8 +17,6 @@ const props = {
 		boxShadow: 'inset 0 0 1px 4px #d88'
   	},
 }
-
-// var stockfish = new Worker("./stockfish.js");
 
 const board = (props) => {
 	const [state,update] = useState(props)
